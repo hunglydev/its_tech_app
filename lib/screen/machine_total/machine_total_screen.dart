@@ -21,13 +21,14 @@ class _MachineTotalScreenState extends State<MachineTotalScreen> {
       children: [
         20.height,
         Container(
-            width: 200,
-            height: 200,
-            color: Colors.blue,
-            child: Text(
-              language.total,
-              style: TextStyle(color: Colors.red),
-            )),
+          width: 200,
+          height: 200,
+          color: Colors.blue,
+          child: Text(
+            language.total,
+            style: primaryTextStyle(),
+          ),
+        ),
       ],
     );
   }
