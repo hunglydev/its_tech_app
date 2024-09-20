@@ -77,9 +77,9 @@ flutter:
   # list giving the asset and other descriptors for the fonts. For
   # example:
   fonts:
-     - family: Monserrat
-       fonts:
-         - asset: fonts/Montserrat-VariableFont_wght.ttf
+      - family: Monserrat
+        fonts:
+          - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
 #         - asset: fonts/Schyler-Italic.ttf
 #           style: italic
   #   - family: Trajan Pro
