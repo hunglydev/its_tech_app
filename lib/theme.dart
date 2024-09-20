@@ -8,14 +8,14 @@ class AppTheme {
         useMaterial3: true,
         primaryColor: color ?? primaryColor,
         scaffoldBackgroundColor: scaffoldLightColor,
-        fontFamily: 'Monserrat',
+        //      fontFamily: 'Monserrat',
         cardColor: cardDarkColor,
       );
   static ThemeData darkTheme({Color? color}) => ThemeData(
         useMaterial3: true,
         primaryColor: color ?? primaryColor,
         scaffoldBackgroundColor: scaffoldDarkColor,
-        fontFamily: 'Monserrat',
+        //    fontFamily: 'Monserrat',
         cardColor: cardDarkColor,
       );
 }

@@ -6,4 +6,22 @@ class LanguageEn extends BaseLanguage {
 
   @override
   String get hello => "Hello";
+
+  @override
+  String get all => "All";
+
+  @override
+  String get completed => "Completed";
+
+  @override
+  String get returned => "Returned";
+
+  @override
+  String get running => "Running";
+
+  @override
+  String get testing => "Testing";
+
+  @override
+  String get waiting => "Waiting";
 }
