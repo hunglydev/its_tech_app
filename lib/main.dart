@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart'; // Add this l
 import 'package:its_tech_app/locale/app_localizations.dart';
 import 'package:its_tech_app/locale/languages.dart';
 import 'package:its_tech_app/screen/machine_total/machine_total_screen.dart';
+import 'package:its_tech_app/theme.dart';
 
 import 'locale/language_vi.dart';
 
@@ -13,6 +14,8 @@ void main() async {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       locale: const Locale('vi'),
+      theme: AppTheme.lightTheme(),
+      darkTheme: AppTheme.darkTheme(),
       localizationsDelegates: [
         AppLocalizations(),
         GlobalMaterialLocalizations.delegate,
