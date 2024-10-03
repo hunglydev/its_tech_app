@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart'; // Add this line
 import 'package:its_tech_app/locale/app_localizations.dart';
 import 'package:its_tech_app/locale/languages.dart';
 import 'package:its_tech_app/screen/customer_detail/screen/customer_detail.dart';
@@ -15,6 +15,8 @@ void main() async {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       locale: const Locale('vi'),
+      theme: AppTheme.lightTheme(),
+      darkTheme: AppTheme.darkTheme(),
       localizationsDelegates: [
         AppLocalizations(),
         GlobalMaterialLocalizations.delegate,
