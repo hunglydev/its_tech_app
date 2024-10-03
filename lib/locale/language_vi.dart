@@ -6,4 +6,10 @@ class LanguageVi extends BaseLanguage {
 
   @override
   String get hello => "Xin chào";
+
+  @override
+  String get notification => "Thông báo";
+
+  @override
+  String get customerDetail => "Chi tiết khách hàng";
 }

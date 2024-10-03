@@ -6,4 +6,10 @@ class LanguageEn extends BaseLanguage {
 
   @override
   String get hello => "Hello";
+
+  @override
+  String get notification => "Notification";
+
+  @override
+  String get customerDetail => "Customer Detail";
 }

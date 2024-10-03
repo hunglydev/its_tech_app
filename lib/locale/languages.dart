@@ -5,4 +5,6 @@ abstract class BaseLanguage {
       Localizations.of(context, BaseLanguage);
   String get total;
   String get hello;
+  String get notification;
+  String get customerDetail;
 }
