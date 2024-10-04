@@ -12,7 +12,7 @@ class _IconFilterState extends State<IconFilter> {
   Widget build(BuildContext context) {
     return IconButton.outlined(
       onPressed: () {},
-      icon: Icon(Icons.filter_alt_outlined),
+      icon: const Icon(Icons.filter_alt_outlined),
     );
   }
 }

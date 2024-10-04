@@ -17,13 +17,13 @@ class NotiItem extends StatelessWidget {
         children: [
           Icon(
             Icons.notifications_none,
-            size: 24.0,
+            size: 30.0,
           ),
           SizedBox(width: 8.0),
           Expanded(
             child: Text(
               contentNoti,
-              style: TextStyle(fontSize: 16.0),
+              style: TextStyle(fontSize: 20.0),
             ),
           ),
         ],

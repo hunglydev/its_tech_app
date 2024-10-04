@@ -30,4 +30,13 @@ class LanguageEn extends BaseLanguage {
 
   @override
   String get customerDetail => "Customer Detail";
+
+  @override
+  String get alltechsupport => "Recent Tech Support Sessions";
+
+  @override
+  String get seeall => "See all";
+
+  @override
+  String get allmachinebeingmade => "The machines are being made";
 }

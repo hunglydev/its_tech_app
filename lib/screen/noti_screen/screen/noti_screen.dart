@@ -19,9 +19,12 @@ class NotiScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(height: 8),
-          Text(
-            "Mới",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          Padding(
+            padding: EdgeInsets.only(left: 16),
+            child: Text(
+              "Mới",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
           ),
           SizedBox(height: 8),
           Column(
@@ -31,9 +34,12 @@ class NotiScreen extends StatelessWidget {
             ],
           ),
           SizedBox(height: 8),
-          Text(
-            "Cũ",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          Padding(
+            padding: EdgeInsets.only(left: 16),
+            child: Text(
+              "Cũ",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
           ),
           SizedBox(height: 8),
           Column(

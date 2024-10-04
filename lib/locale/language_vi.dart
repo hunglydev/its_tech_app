@@ -30,4 +30,13 @@ class LanguageVi extends BaseLanguage {
 
   @override
   String get waiting => "Đang chờ";
+
+  @override
+  String get alltechsupport => "Các kỳ Tech Support gần đây";
+
+  @override
+  String get seeall => "Xem tất cả";
+
+  @override
+  String get allmachinebeingmade => "Các máy đang được làm";
 }
