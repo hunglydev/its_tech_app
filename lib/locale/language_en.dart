@@ -24,4 +24,19 @@ class LanguageEn extends BaseLanguage {
 
   @override
   String get waiting => "Waiting";
+
+  @override
+  String get firstTester => "First tester";
+
+  @override
+  String get secondTester => "Second tester";
+
+  @override
+  String get technician => "Technician";
+
+  @override
+  String get edit => "Edit";
+
+  @override
+  String get remove => "Remove";
 }
