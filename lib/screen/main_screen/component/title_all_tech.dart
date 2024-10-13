@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:its_tech_app/main.dart';
 import 'package:its_tech_app/screen/main_screen/component/text_main.dart';
 import 'package:its_tech_app/utils/colors.dart';
+import 'package:nb_utils/nb_utils.dart';
 
 class TitleAllTech extends StatelessWidget {
   const TitleAllTech({super.key});
@@ -26,14 +27,8 @@ class TitleAllTech extends StatelessWidget {
           ).copyWith(
             overlayColor: WidgetStateProperty.all(Colors.transparent),
           ),
-          child: Text(
-            language.seeall,
-            style: const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: primaryColor,
-            ),
-          ),
+          child:
+              Text(language.seeall, style: boldTextStyle(color: primaryColor)),
         )
       ],
     );

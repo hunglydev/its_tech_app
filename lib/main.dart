@@ -4,7 +4,6 @@ import 'package:its_tech_app/locale/app_localizations.dart';
 import 'package:its_tech_app/locale/languages.dart';
 import 'package:its_tech_app/screen/customer_detail/screen/customer_detail.dart';
 import 'package:its_tech_app/screen/main_screen/screen/main_screen.dart';
-import 'package:its_tech_app/screen/noti_screen/screen/noti_screen.dart';
 import 'package:its_tech_app/theme.dart';
 
 import 'locale/language_vi.dart';
@@ -17,7 +16,6 @@ void main() async {
       debugShowCheckedModeBanner: false,
       locale: const Locale('vi'),
       theme: AppTheme.lightTheme(),
-      darkTheme: AppTheme.darkTheme(),
       localizationsDelegates: [
         AppLocalizations(),
         GlobalMaterialLocalizations.delegate,
@@ -29,7 +27,7 @@ void main() async {
         Locale('vi'),
       ],
       home: const Scaffold(
-        body: MainScreen(),
+        body: CustomerDetail(),
       ),
     ),
   );

@@ -32,7 +32,7 @@ class LanguageVi extends BaseLanguage {
   String get waiting => "Đang chờ";
 
   @override
-  String get alltechsupport => "Các kỳ Tech Support gần đây";
+  String get alltechsupport => "Các Tech Support gần đây";
 
   @override
   String get seeall => "Xem tất cả";

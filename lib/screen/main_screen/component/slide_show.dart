@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+import 'package:its_tech_app/utils/images.dart';
 
 class SlideShow extends StatelessWidget {
-  final List<String> images = [
-    'assets/images/image1.jpg',
-    'assets/images/image1.jpg',
-    'assets/images/image1.jpg',
-    'assets/images/image1.jpg',
-  ];
+  final List<String> images = Images.imageForSlideShow;
 
   @override
   Widget build(BuildContext context) {
@@ -16,22 +12,11 @@ class SlideShow extends StatelessWidget {
       autoPlayInterval: 3000,
       isLoop: true,
       children: [
-        Image.asset(
-          'assets/images/image1.jpg',
-          fit: BoxFit.cover,
-        ),
-        Image.asset(
-          'assets/images/image1.jpg',
-          fit: BoxFit.cover,
-        ),
-        Image.asset(
-          'assets/images/image1.jpg',
-          fit: BoxFit.cover,
-        ),
-        Image.asset(
-          'assets/images/image1.jpg',
-          fit: BoxFit.cover,
-        ),
+        for (int i = 0; i < 4; i++)
+          Image.asset(
+            images[i],
+            fit: BoxFit.cover,
+          ),
       ],
     );
   }

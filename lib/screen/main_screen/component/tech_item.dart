@@ -28,7 +28,7 @@ class _TechItemState extends State<TechItem> {
             SizedBox(height: 8),
             Text(
               "18/11/2024",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
             )
           ],
         ),
