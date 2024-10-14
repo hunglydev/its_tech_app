@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "744564456076",
+    "project_id": "its-tech",
+    "storage_bucket": "its-tech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744564456076:android:35a888e697030c19e419a9",
+        "android_client_info": {
+          "package_name": "com.example.its_tech_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIH6eGJDvUrD_F6qNhlL5A-by-NuoEZGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
