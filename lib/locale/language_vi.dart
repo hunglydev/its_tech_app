@@ -8,6 +8,12 @@ class LanguageVi extends BaseLanguage {
   String get hello => "Xin chào";
 
   @override
+  String get notification => "Thông báo";
+
+  @override
+  String get customerDetail => "Chi tiết khách hàng";
+
+  @override
   String get all => "Tất cả";
 
   @override
@@ -22,6 +28,18 @@ class LanguageVi extends BaseLanguage {
   @override
   String get testing => "Kiểm tra";
 
+  @override
+  String get waiting => "Đang chờ";
+
+  @override
+  String get alltechsupport => "Các Tech Support gần đây";
+
+  @override
+  String get seeall => "Xem tất cả";
+
+  @override
+  String get allmachinebeingmade => "Các máy đang được làm";
+  
   @override
   String get waiting => "Chờ";
 
@@ -39,4 +57,5 @@ class LanguageVi extends BaseLanguage {
 
   @override
   String get remove => "Xóa";
+
 }

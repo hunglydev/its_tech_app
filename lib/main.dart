@@ -1,11 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart'; // Add this line
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:its_tech_app/locale/app_localizations.dart';
 import 'package:its_tech_app/locale/languages.dart';
-
+import 'package:its_tech_app/screen/customer_detail/screen/customer_detail.dart';
+import 'package:its_tech_app/screen/main_screen/screen/main_screen.dart';
+import 'package:its_tech_app/theme.dart';
 import 'package:its_tech_app/screen/Login_Logup/login_screen.dart';
-
 import 'package:its_tech_app/theme.dart';
 import 'locale/language_vi.dart';
 
@@ -27,7 +28,6 @@ void main() async {
       debugShowCheckedModeBanner: false,
       locale: const Locale('vi'),
       theme: AppTheme.lightTheme(),
-      darkTheme: AppTheme.darkTheme(),
       localizationsDelegates: [
         AppLocalizations(),
         GlobalMaterialLocalizations.delegate,
@@ -35,10 +35,11 @@ void main() async {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [
-        Locale('en'), // Define supported locales
-        Locale('vi'), // Assuming you also want to support Vietnamese
+        Locale('en'),
+        Locale('vi'),
       ],
       home: const Scaffold(
+
         body: LoginScreen(),
       ),
     ),
