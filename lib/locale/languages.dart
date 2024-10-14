@@ -3,7 +3,15 @@ import 'package:flutter/cupertino.dart';
 abstract class BaseLanguage {
   static BaseLanguage of(BuildContext context) =>
       Localizations.of(context, BaseLanguage);
+
+  //hung
+
+  String get edit;
+
+  String get remove;
+
   String get total;
+  
   String get hello;
 
   String get all;
@@ -18,6 +26,12 @@ abstract class BaseLanguage {
 
   String get returned;
 
+
+  String get firstTester;
+
+  String get technician;
+
+  String get secondTester;
   //dat
   String get notification;
 

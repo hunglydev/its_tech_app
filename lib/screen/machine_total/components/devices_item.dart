@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:its_tech_app/components/format_date.dart';
+import 'package:its_tech_app/main.dart';
 import 'package:its_tech_app/model/devices.dart';
 import 'package:its_tech_app/utils/string_extension.dart';
 import 'package:nb_utils/nb_utils.dart';
@@ -22,7 +24,7 @@ class _DevicesItemState extends State<DevicesItem> {
   void initState() {
     super.initState();
     //get color state by status devices
-    if (widget.index > 0) {
+    if (widget.index < 10) {
       deviceIndex = "0${widget.index}";
     } else {
       deviceIndex = widget.index.toString();
@@ -32,12 +34,13 @@ class _DevicesItemState extends State<DevicesItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(padding8),
+      padding: EdgeInsets.all(padding16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(borderRadius12),
         color: whiteColor,
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
@@ -60,7 +63,7 @@ class _DevicesItemState extends State<DevicesItem> {
               Container(
                 padding: EdgeInsets.symmetric(
                   horizontal: padding8,
-                  vertical: padding8,
+                  vertical: 4,
                 ),
                 decoration: BoxDecoration(
                   color:
@@ -76,7 +79,50 @@ class _DevicesItemState extends State<DevicesItem> {
                 ),
               )
             ],
-          )
+          ),
+          16.height,
+          Text(
+            widget.device.customer!.name.validate(),
+            style: boldTextStyle(),
+          ),
+          Text(
+            widget.device.customer!.phoneNumber.validate(),
+            style: primaryTextStyle(),
+          ),
+          12.height,
+          Text(
+            "${formatDate(widget.device.startWorkingTime.validate(), showTime: true)} - ${formatDate(widget.device.endWorkingTime.validate(), showTime: true)}",
+            style: secondaryTextStyle(),
+          ),
+          12.height,
+          Text(
+            language.firstTester,
+            style: secondaryTextStyle(),
+          ),
+          Text(
+            widget.device.tester1!.name.validate(),
+            style: primaryTextStyle(),
+          ),
+          8.height,
+          Text(
+            language.technician,
+            style: secondaryTextStyle(),
+          ),
+          if (widget.device.technician != null)
+            Text(
+              widget.device.technician!.name.validate(),
+              style: primaryTextStyle(),
+            ),
+          8.height,
+          Text(
+            language.secondTester,
+            style: secondaryTextStyle(),
+          ),
+          if (widget.device.tester2 != null)
+            Text(
+              widget.device.tester2!.name.validate(),
+              style: primaryTextStyle(),
+            ),
         ],
       ),
     );

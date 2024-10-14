@@ -23,10 +23,10 @@ class LanguageVi extends BaseLanguage {
   String get returned => "Đã trả về";
 
   @override
-  String get running => "Đang thực hiện";
+  String get running => "Thực hiện";
 
   @override
-  String get testing => "Đang kiểm tra";
+  String get testing => "Kiểm tra";
 
   @override
   String get waiting => "Đang chờ";
@@ -39,4 +39,23 @@ class LanguageVi extends BaseLanguage {
 
   @override
   String get allmachinebeingmade => "Các máy đang được làm";
+  
+  @override
+  String get waiting => "Chờ";
+
+  @override
+  String get firstTester => "Tester trước";
+
+  @override
+  String get secondTester => "Tester sau";
+
+  @override
+  String get technician => "Technician";
+
+  @override
+  String get edit => "Chỉnh sửa";
+
+  @override
+  String get remove => "Xóa";
+
 }
