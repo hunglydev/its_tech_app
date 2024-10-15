@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-
-import 'package:its_tech_app/screen/Login_Logup/auth_serivice.dart';
-import 'package:its_tech_app/screen/Login_Logup/button.dart';
-import 'package:its_tech_app/screen/Login_Logup/forgot_password.dart';
-import 'package:its_tech_app/screen/Login_Logup/signup_screen.dart';
-import 'package:its_tech_app/screen/Login_Logup/test.dart';
+import 'package:its_tech_app/components/build_top_language.dart';
+import 'package:its_tech_app/main.dart';
+import 'package:its_tech_app/screen/auth_screen/signup_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../main_screen/screen/main_screen.dart';
+import 'auth_serivice.dart';
+import 'button.dart';
+import 'forgot_password.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -52,7 +53,7 @@ class _SignInScreenState extends State<LoginScreen> {
   void _navigateToMainScreen() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => mainScreen()),
+      MaterialPageRoute(builder: (context) => const MainScreen()),
     );
   }
 
@@ -66,26 +67,17 @@ class _SignInScreenState extends State<LoginScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
+                const Row(
                   children: [
-                    const Text(
+                    Text(
                       'IT',
                       style: TextStyle(
                           fontSize: 35,
                           color: Color(0xFFFD6434),
                           fontWeight: FontWeight.bold),
                     ),
-                    const Spacer(),
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFE8E8E8),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(50),
-                        ),
-                      ),
-                      child: const Text('icon'),
-                    ),
+                    Spacer(),
+                    BuildTopLanguage()
                   ],
                 ),
                 const Text(
@@ -99,9 +91,9 @@ class _SignInScreenState extends State<LoginScreen> {
                 const SizedBox(
                   height: 60,
                 ),
-                const Text(
-                  'Sign In',
-                  style: TextStyle(fontSize: 40),
+                Text(
+                  language.signIn,
+                  style: const TextStyle(fontSize: 40),
                 ),
                 const Text(
                   'Sign in and start managing machines and members',
@@ -250,7 +242,7 @@ class _SignInScreenState extends State<LoginScreen> {
   }
 
   _logIn() {
-    final user = _auth.signInWithEmailAndPassword(
+    _auth.signInWithEmailAndPassword(
       email.text,
       password.text,
     );

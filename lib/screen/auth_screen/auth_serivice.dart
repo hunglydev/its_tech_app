@@ -1,13 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:its_tech_app/screen/Login_Logup/login_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
+
+import 'login_screen.dart';
 
 class AuthService {
   Future<void> createUserWithEmailAndPassword(
       BuildContext context, String email, String password) async {
     try {
-      final credential = await FirebaseAuth.instance
+      await FirebaseAuth.instance
           .createUserWithEmailAndPassword(email: email, password: password);
       toast("Dang ki thanh cong");
       Navigator.push(context,
@@ -25,7 +26,7 @@ class AuthService {
 
   Future<void> signInWithEmailAndPassword(String email, String password) async {
     try {
-      final credential = await FirebaseAuth.instance
+      await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password);
       toast("đăng nhập thành công");
     } on FirebaseAuthException catch (e) {
@@ -35,7 +36,7 @@ class AuthService {
         toast("Sai mật khuẩu");
       }
     }
-    return null;
+    return;
   }
 
   Future<void> sendPasswordResetEmail(String email) async {

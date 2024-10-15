@@ -1,12 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../utils/colors.dart';
 import '../../noti_screen/screen/noti_screen.dart';
 
 class ActionsAppBar extends StatelessWidget {
-  ActionsAppBar({super.key, required this.ktra});
-  bool ktra;
+  final bool check;
+  const ActionsAppBar({super.key, required this.check});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +13,7 @@ class ActionsAppBar extends StatelessWidget {
         Container(
           margin: const EdgeInsets.only(right: 16, top: 4),
           decoration: const BoxDecoration(
-            color: backgroundiconbell,
+            color: backGroundIconBell,
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.all(Radius.circular(10)),
           ),
@@ -31,7 +29,7 @@ class ActionsAppBar extends StatelessWidget {
             ),
           ),
         ),
-        if (ktra)
+        if (check)
           Positioned(
             right: 12,
             child: Container(

@@ -32,14 +32,14 @@ class LanguageEn extends BaseLanguage {
   String get customerDetail => "Customer Detail";
 
   @override
-  String get alltechsupport => "Recent Tech Support Sessions";
+  String get allTechSupport => "Recent Tech Support Sessions";
 
   @override
-  String get seeall => "See all";
+  String get seeAll => "See all";
 
   @override
-  String get allmachinebeingmade => "The machines are being made";
-  
+  String get allMachineBeginMade => "The machines are being made";
+
   @override
   String get firstTester => "First tester";
 
@@ -54,4 +54,7 @@ class LanguageEn extends BaseLanguage {
 
   @override
   String get remove => "Remove";
+
+  @override
+  String get signIn => "Sign in";
 }

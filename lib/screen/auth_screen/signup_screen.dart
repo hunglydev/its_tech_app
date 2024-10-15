@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:its_tech_app/screen/Login_Logup/auth_serivice.dart';
-import 'package:its_tech_app/screen/Login_Logup/button.dart';
+
+import 'auth_serivice.dart';
+import 'button.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -15,7 +16,7 @@ class _SignupScreenState extends State<SignUpScreen> {
   final check = true;
 
   final _auth = AuthService();
-  var show_Password = true;
+  var showPassword = true;
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController =
@@ -24,7 +25,7 @@ class _SignupScreenState extends State<SignUpScreen> {
   @override
   void initState() {
     super.initState();
-    show_Password = true;
+    showPassword = true;
   }
 
   @override
@@ -113,7 +114,7 @@ class _SignupScreenState extends State<SignUpScreen> {
                 ),
                 TextField(
                   controller: passwordController,
-                  obscureText: show_Password,
+                  obscureText: showPassword,
                   decoration: InputDecoration(
                       hintText: 'Password',
                       hintStyle:
@@ -138,10 +139,10 @@ class _SignupScreenState extends State<SignUpScreen> {
                       suffixIcon: IconButton(
                           onPressed: () {
                             setState(() {
-                              show_Password = !show_Password;
+                              showPassword = !showPassword;
                             });
                           },
-                          icon: show_Password
+                          icon: showPassword
                               ? const Icon(Icons.visibility)
                               : const Icon(Icons.visibility_off))),
                 ),
@@ -150,7 +151,7 @@ class _SignupScreenState extends State<SignUpScreen> {
                 ),
                 TextField(
                   controller: confirmPasswordController,
-                  obscureText: show_Password,
+                  obscureText: showPassword,
                   decoration: InputDecoration(
                       hintText: "Confirm Password",
                       hintStyle: TextStyle(
@@ -175,10 +176,10 @@ class _SignupScreenState extends State<SignUpScreen> {
                       suffixIcon: IconButton(
                           onPressed: () {
                             setState(() {
-                              show_Password = !show_Password;
+                              showPassword = !showPassword;
                             });
                           },
-                          icon: show_Password
+                          icon: showPassword
                               ? const Icon(Icons.visibility)
                               : const Icon(Icons.visibility_off))),
                 ),
@@ -207,7 +208,7 @@ class _SignupScreenState extends State<SignUpScreen> {
       );
       return;
     }
-    final user = await _auth.createUserWithEmailAndPassword(
+    await _auth.createUserWithEmailAndPassword(
         context, emailController.text, passwordController.text);
 
     return;

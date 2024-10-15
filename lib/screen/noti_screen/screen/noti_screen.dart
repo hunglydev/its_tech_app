@@ -43,7 +43,8 @@ class NotiScreen extends StatelessWidget {
                 ),
               );
             } else if (index > 0 && index <= newNoti.length) {
-              return NotiItem(contentNoti: newNoti[index - 1].content);
+              return NotiItem(
+                  contentNoti: newNoti[index - 1].content.toString());
             } else if (index == newNoti.length + 1) {
               return const Padding(
                 padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
@@ -54,7 +55,8 @@ class NotiScreen extends StatelessWidget {
               );
             } else {
               return NotiItem(
-                  contentNoti: oldNoti[index - newNoti.length - 2].content);
+                  contentNoti:
+                      oldNoti[index - newNoti.length - 2].content.toString());
             }
           },
         ),

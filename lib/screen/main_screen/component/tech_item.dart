@@ -12,7 +12,6 @@ class _TechItemState extends State<TechItem> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        print("hello");
       },
       child: const Padding(
         padding: EdgeInsets.symmetric(horizontal: 6.0),

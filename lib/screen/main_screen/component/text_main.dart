@@ -3,7 +3,7 @@ import 'package:nb_utils/nb_utils.dart';
 
 class TextMain extends StatelessWidget {
   const TextMain({super.key, required this.text});
-  final text;
+  final String text;
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class NotiItem extends StatelessWidget {
   const NotiItem({super.key, required this.contentNoti});
-  final contentNoti;
+  final String contentNoti;
 
   @override
   Widget build(BuildContext context) {

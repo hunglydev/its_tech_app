@@ -5,13 +5,14 @@ abstract class BaseLanguage {
       Localizations.of(context, BaseLanguage);
 
   //hung
+  String get signIn;
 
   String get edit;
 
   String get remove;
 
   String get total;
-  
+
   String get hello;
 
   String get all;
@@ -26,7 +27,6 @@ abstract class BaseLanguage {
 
   String get returned;
 
-
   String get firstTester;
 
   String get technician;
@@ -37,9 +37,9 @@ abstract class BaseLanguage {
 
   String get customerDetail;
 
-  String get alltechsupport;
+  String get allTechSupport;
 
-  String get seeall;
+  String get seeAll;
 
-  String get allmachinebeingmade;
+  String get allMachineBeginMade;
 }

@@ -29,15 +29,13 @@ class _StatusDeviceState extends State<StatusDevice> {
         return StatefulBuilder(
           builder: (context, setState) => GestureDetector(
             onTap: () {
-              log("Lan 1: " +
-                  widget.statusMachineResponse[index].isSelect.toString());
+              log("Lan 1: ${widget.statusMachineResponse[index].isSelect}");
               widget.statusMachineResponse[index].isSelect =
                   !widget.statusMachineResponse[index].isSelect;
-              log("Index: " + index.toString());
+              log("Index: $index");
               log("hehehehe");
               setState(() => ());
-              log("Lan 2: " +
-                  widget.statusMachineResponse[index].isSelect.toString());
+              log("Lan 2: ${widget.statusMachineResponse[index].isSelect}");
             },
             child: Container(
               alignment: Alignment.center,

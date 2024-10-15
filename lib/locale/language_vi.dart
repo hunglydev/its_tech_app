@@ -32,16 +32,13 @@ class LanguageVi extends BaseLanguage {
   String get waiting => "Đang chờ";
 
   @override
-  String get alltechsupport => "Các Tech Support gần đây";
+  String get allTechSupport => "Các Tech Support gần đây";
 
   @override
-  String get seeall => "Xem tất cả";
+  String get seeAll => "Xem tất cả";
 
   @override
-  String get allmachinebeingmade => "Các máy đang được làm";
-  
-  @override
-  String get waiting => "Chờ";
+  String get allMachineBeginMade => "Các máy đang được làm";
 
   @override
   String get firstTester => "Tester trước";
@@ -58,4 +55,6 @@ class LanguageVi extends BaseLanguage {
   @override
   String get remove => "Xóa";
 
+  @override
+  String get signIn => "Đăng nhập";
 }

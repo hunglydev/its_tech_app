@@ -49,6 +49,7 @@ dependencies:
   fluttertoast: ^8.2.8
   hive:
   hive_flutter:
+  provider: ^6.1.2
 
 
 dev_dependencies:
@@ -73,7 +74,7 @@ flutter:
     - assets/
     - assets/images/
     - assets/icons/
-    - assets/images/image1.jpg
+    - assets/flag/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -66,7 +66,7 @@ class _MainScreenState extends State<MainScreen> {
           automaticallyImplyLeading: false,
           title: const TitleAppBar(),
           actions: [
-            ActionsAppBar(ktra: ktra),
+            ActionsAppBar(check: ktra),
           ],
         ),
         body: RefreshIndicator(
@@ -80,7 +80,7 @@ class _MainScreenState extends State<MainScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   8.height,
-                  SlideShow(),
+                  const SlideShow(),
                   8.height,
                   const TitleAllTech(),
                   8.height,
@@ -95,7 +95,7 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                   ),
                   8.height,
-                  TextMain(text: language.allmachinebeingmade),
+                  TextMain(text: language.allMachineBeginMade),
                 ],
               ),
             ),

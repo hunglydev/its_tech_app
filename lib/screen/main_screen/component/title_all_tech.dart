@@ -12,10 +12,9 @@ class TitleAllTech extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        TextMain(text: language.alltechsupport),
+        TextMain(text: language.allTechSupport),
         TextButton(
           onPressed: () {
-            print("hello");
           },
           style: TextButton.styleFrom(
             foregroundColor: primaryColor,
@@ -28,7 +27,7 @@ class TitleAllTech extends StatelessWidget {
             overlayColor: WidgetStateProperty.all(Colors.transparent),
           ),
           child:
-              Text(language.seeall, style: boldTextStyle(color: primaryColor)),
+              Text(language.seeAll, style: boldTextStyle(color: primaryColor)),
         )
       ],
     );

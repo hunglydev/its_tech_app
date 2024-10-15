@@ -4,6 +4,7 @@ import 'package:its_tech_app/utils/images.dart';
 
 class SlideShow extends StatelessWidget {
   final List<String> images = Images.imageForSlideShow;
+  const SlideShow({super.key});
 
   @override
   Widget build(BuildContext context) {
