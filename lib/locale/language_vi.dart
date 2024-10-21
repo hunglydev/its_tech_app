@@ -57,4 +57,28 @@ class LanguageVi extends BaseLanguage {
 
   @override
   String get signIn => "Đăng nhập";
+
+  @override
+  String get addDevice => "Thêm máy";
+
+  @override
+  String get imageOfDevice => "Ảnh của máy";
+
+  @override
+  String get nameOfCustomer => "Tên khách hàng";
+
+  @override
+  String get nameOfDevice => "Tên thiết bị";
+
+  @override
+  String get note => "Ghi chú";
+
+  @override
+  String get requirementCustomer => "Yêu cầu khách hàng";
+
+  @override
+  String get timeReceiveDevice => "Thời gian nhận máy";
+
+  @override
+  String get timeReturnDevice => "Thời gian trả máy";
 }

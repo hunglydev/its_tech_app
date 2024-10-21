@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:its_tech_app/main.dart';
+import 'package:nb_utils/nb_utils.dart';
 
 class AddDeviceScreen extends StatefulWidget {
   const AddDeviceScreen({super.key});
@@ -21,6 +23,11 @@ class _AddDeviceScreenState extends State<AddDeviceScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: appBarWidget(language.addDevice),
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }

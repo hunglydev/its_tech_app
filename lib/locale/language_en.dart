@@ -57,4 +57,28 @@ class LanguageEn extends BaseLanguage {
 
   @override
   String get signIn => "Sign in";
+
+  @override
+  String get addDevice => "Add device";
+
+  @override
+  String get imageOfDevice => "Images of device";
+
+  @override
+  String get nameOfCustomer => "Customer";
+
+  @override
+  String get nameOfDevice => "Name of devices";
+
+  @override
+  String get note => "Note";
+
+  @override
+  String get requirementCustomer => "Requirement";
+
+  @override
+  String get timeReceiveDevice => "Time received device";
+
+  @override
+  String get timeReturnDevice => "Time returned devices";
 }

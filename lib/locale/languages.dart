@@ -32,6 +32,23 @@ abstract class BaseLanguage {
   String get technician;
 
   String get secondTester;
+
+  String get addDevice;
+
+  String get nameOfCustomer;
+
+  String get timeReceiveDevice;
+
+  String get timeReturnDevice;
+
+  String get requirementCustomer;
+
+  String get imageOfDevice;
+
+  String get nameOfDevice;
+
+  String get note;
+
   //dat
   String get notification;
 

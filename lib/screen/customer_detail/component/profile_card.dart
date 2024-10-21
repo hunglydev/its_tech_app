@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
 
 class ProfileCard extends StatefulWidget {
   const ProfileCard(
@@ -66,7 +67,7 @@ class _ProfileCardState extends State<ProfileCard> {
                           ),
                           Text(
                             widget.classUser,
-                            style: const TextStyle(fontSize: 16.0),
+                            style: primaryTextStyle(size: 16),
                           ),
                         ],
                       ),
